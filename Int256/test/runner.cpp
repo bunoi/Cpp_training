@@ -25,7 +25,7 @@ bool suite_MyTestSuite1_init = false;
 static MyTestSuite1 suite_MyTestSuite1;
 
 static CxxTest::List Tests_MyTestSuite1 = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_MyTestSuite1( "Int256/test/MyTestSuite1.h", 4, "MyTestSuite1", suite_MyTestSuite1, Tests_MyTestSuite1 );
+CxxTest::StaticSuiteDescription suiteDescription_MyTestSuite1( "Cpp_training/Int256/test/MyTestSuite1.h", 4, "MyTestSuite1", suite_MyTestSuite1, Tests_MyTestSuite1 );
 
 static class TestDescription_suite_MyTestSuite1_testAddition : public CxxTest::RealTestDescription {
 public:
@@ -38,6 +38,24 @@ public:
  TestDescription_suite_MyTestSuite1_testInt256() : CxxTest::RealTestDescription( Tests_MyTestSuite1, suiteDescription_MyTestSuite1, 13, "testInt256" ) {}
  void runTest() { suite_MyTestSuite1.testInt256(); }
 } testDescription_suite_MyTestSuite1_testInt256;
+
+static class TestDescription_suite_MyTestSuite1_testInt256Addition : public CxxTest::RealTestDescription {
+public:
+ TestDescription_suite_MyTestSuite1_testInt256Addition() : CxxTest::RealTestDescription( Tests_MyTestSuite1, suiteDescription_MyTestSuite1, 19, "testInt256Addition" ) {}
+ void runTest() { suite_MyTestSuite1.testInt256Addition(); }
+} testDescription_suite_MyTestSuite1_testInt256Addition;
+
+static class TestDescription_suite_MyTestSuite1_testInt256Multiplication : public CxxTest::RealTestDescription {
+public:
+ TestDescription_suite_MyTestSuite1_testInt256Multiplication() : CxxTest::RealTestDescription( Tests_MyTestSuite1, suiteDescription_MyTestSuite1, 28, "testInt256Multiplication" ) {}
+ void runTest() { suite_MyTestSuite1.testInt256Multiplication(); }
+} testDescription_suite_MyTestSuite1_testInt256Multiplication;
+
+static class TestDescription_suite_MyTestSuite1_testInt256Division : public CxxTest::RealTestDescription {
+public:
+ TestDescription_suite_MyTestSuite1_testInt256Division() : CxxTest::RealTestDescription( Tests_MyTestSuite1, suiteDescription_MyTestSuite1, 44, "testInt256Division" ) {}
+ void runTest() { suite_MyTestSuite1.testInt256Division(); }
+} testDescription_suite_MyTestSuite1_testInt256Division;
 
 #include <cxxtest/Root.cpp>
 const char* CxxTest::RealWorldDescription::_worldName = "cxxtest";

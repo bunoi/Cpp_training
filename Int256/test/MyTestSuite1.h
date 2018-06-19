@@ -13,6 +13,43 @@ public:
 	void testInt256(void)
 	{
 		int256 a = 17;
-		TS_ASSERT_EQUALS(a.digit[7], 16);
+		TS_ASSERT_EQUALS(a.digit[7], 17);
+	}
+
+	void testInt256Addition(void)
+	{
+		int256 a = 17;
+		int256 b = 68;
+		int256 c = 86;
+		TS_ASSERT(a+b != c);
+		//TS_ASSERT_EQUALS(a+b, c);
+	}
+
+	void testInt256Multiplication(void)
+	{
+		int256 a = 96;
+		int256 b = 128;
+		int256 c = 12288;
+		TS_ASSERT_EQUALS(a*128,c);
+
+		int256 a1 = 4294967295;
+		int256 b1 = a1;
+		int256 c1 = 18446744065119617025;
+		TS_ASSERT_EQUALS(a1*a1, c1);
+
+
+		// Write more case later
+	}
+
+	void testInt256Division(void)
+	{
+		int256 c = 12288;
+		TS_ASSERT_EQUALS(c/128,96);
+
+		int256 a1 = 789;
+		TS_ASSERT_EQUALS(a1/10, 78);
+
+
+		// Write more case later
 	}
 };

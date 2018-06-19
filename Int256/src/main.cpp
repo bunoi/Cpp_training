@@ -33,5 +33,27 @@ int main()
 	std::cout << c3 << std::endl;
 	std::cout << a3 << std::endl;
 
-	std::cin >> f;
+	std::cout << "Multiplication"<< std::endl;
+	int256 a4(96);
+	int256 b4(128);
+	int256 c4;
+	c4 = a4 * b4;
+	std::cout << c4 << std::endl;
+	std::cout << a4 << std::endl;
+
+	uint64_t f1 = 4294967295 * 4294967295;
+	std::cout << f1;
+
+
+	// P swiss example
+	std::cout << "Example 1" << std::endl;
+	int256 x = 300;
+	int256 y = -500;
+	x *= 3000;
+	x = x + y;
+	std::cout << x << std::endl;  // print 899500
+	std::cout << sizeof(x) << std::endl; // print 32
+
+
+	// std::cin >> f;
 }
