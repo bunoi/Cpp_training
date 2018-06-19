@@ -1,5 +1,5 @@
 #include <cxxtest/TestSuite.h>
-#include "int256.h"
+#include "../include/int256.h"
 
 class MyTestSuite1 : public CxxTest::TestSuite
 {
