@@ -20,12 +20,12 @@ int main( int argc, char *argv[] ) {
     return status;
 }
 bool suite_MyTestSuite1_init = false;
-#include "/home/bb/Cpp_training/Int256/test/MyTestSuite1.h"
+#include "/home/bun/Cpp_training/Int256/test/MyTestSuite1.h"
 
 static MyTestSuite1 suite_MyTestSuite1;
 
 static CxxTest::List Tests_MyTestSuite1 = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_MyTestSuite1( "Cpp_training/Int256/test/MyTestSuite1.h", 4, "MyTestSuite1", suite_MyTestSuite1, Tests_MyTestSuite1 );
+CxxTest::StaticSuiteDescription suiteDescription_MyTestSuite1( "MyTestSuite1.h", 4, "MyTestSuite1", suite_MyTestSuite1, Tests_MyTestSuite1 );
 
 static class TestDescription_suite_MyTestSuite1_testAddition : public CxxTest::RealTestDescription {
 public:

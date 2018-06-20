@@ -8,7 +8,7 @@ file(GLOB SOURCES
 
 SET(CMAKE_CXX_FLAGS "-std=c++11")   
 include_directories(${PROJECT_SOURCE_DIR}/include/)
-include_directories(/home/bb/Cpp_training/cxxtest-4.3)
+include_directories(${PROJECT_SOURCE_DIR}/../cxxtest-4.3)
 
 add_executable (int256 src/int256.cpp src/main.cpp)
 add_executable (test_int256 src/int256.cpp test/runner.cpp)

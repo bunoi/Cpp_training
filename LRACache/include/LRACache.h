@@ -36,9 +36,3 @@ public:
 protected:
     std::map<Key, T> M;
 };
-
-class ExpireData
-{
-protected:
-    typename std::map<Key
-};
