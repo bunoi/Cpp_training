@@ -18,9 +18,9 @@ public:
 
 	void testInt256Addition(void)
 	{
-		int256 a = 17;
-		int256 b = 68;
-		int256 c = 86;
+		int256 a = 89;
+		int256 b = 72;
+		int256 c = 162;
 		TS_ASSERT(a+b != c);
 		//TS_ASSERT_EQUALS(a+b, c);
 	}
@@ -35,7 +35,7 @@ public:
 		int256 a1 = 4294967295;
 		int256 b1 = a1;
 		int256 c1 = 18446744065119617025;
-		TS_ASSERT_EQUALS(a1*a1, c1);
+		TS_ASSERT_EQUALS(a1*a1 + 1, c1 + 1);
 
 
 		// Write more case later
